@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 VALIDATION</title>
+
+    <style>
+        textarea:required:invalid,
+        input:required:invalid {
+            background-color: lightyellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- f you want to skip validation only when the specific button is pressed, you can specify "formnovalidate" attribute on the submit input type. -->
+    <header>
+
+        <h1>Validation demo</h1>
+
+        <p>Demo showing HTML5 validation</p>
+
+    </header>
+
+    <footer>
+
+        <h1></h1>
+
+        <p>HTML Goodies</p>
+
+    </footer>
+
+    <form id="myform" action="#">
+
+        <input id="name" required><br>
+
+        <input id="phone"><br>
+
+        <input id="zip" required><br>
+
+        <input id="button1" type="submit">
+
+        <!-- f you want to skip validation only when the specific button is pressed, you can specify "formnovalidate" attribute on the submit input type. -->
+
+        <input id="button2" type="submit" formnovalidate>
+
+        <!-- autocomplete -->
+        <form> <label for="email">Email Address</label><br> <input type="email" name="email" id="email"
+                autocomplete="on"> </form>. <br>
+
+
+        <label>Name</label>
+        <input type="text" placeholder="John Prank" name="name" autocomplete="on"> . <br>
+
+        <label>Email</label>
+        <!-- <input type="email" placeholder="johnprank@gmail.com" autocomplete="on"> -->
+        <input type="email" placeholder="johnprank@gmail.com" <input type="email" name="email" id="email"
+            autocomplete="on">
+
+
+
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>
